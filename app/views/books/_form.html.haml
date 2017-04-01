@@ -1,0 +1,13 @@
+%main
+  .errors
+    - @book.errors.full_messages.each do |error|
+      .error= error
+
+  = form_for @book do |f|
+    .input
+      = f.label :title
+      = f.text_field :title
+    .input
+      = f.label :author
+      = f.text_field :author
+    = f.submit

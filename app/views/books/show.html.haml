@@ -1,0 +1,17 @@
+%header
+  = link_to "account_balance", "/", class: "material-icons"
+  .title
+    %h1 Rails Library
+    %span -
+    %h2 Book
+
+
+%main
+
+  %div
+    %span Title:
+    %strong= @book.title
+
+  %div
+    %span Author:
+    %strong= @book.author
