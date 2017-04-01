@@ -1,0 +1,13 @@
+%header
+  %h1 Rails Library
+  %h2 Books
+
+
+%table
+  %tr
+    %th Title
+    %th Author
+  - @books.each do |book|
+    %tr
+      %td= book.title
+      %td= book.author
